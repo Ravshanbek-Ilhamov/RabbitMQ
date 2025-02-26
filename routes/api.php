@@ -7,5 +7,3 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-use App\Http\Controllers\MessageController;
-Route::get('/send-message', [MessageController::class, 'sendMessage']);
